@@ -27,9 +27,8 @@ body{
     display: grid;
     grid-template-columns:repeat(3,1fr);    
     margin:40px auto;
-    max-height: 1200px;
-    max-width:1800px;
-    min-height: 900px;
+    max-width:90vw;
+    min-height: 100vh;
 }
 
 .items-side{
@@ -39,12 +38,13 @@ body{
 }
 
 .item-place{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3,1fr);   
     margin: 10px;
-    max-height: 1000px;
+    max-height: 70hv;
     overflow-y: scroll;
     scrollbar-width: none;
+    flex-wrap: wrap;
 }
 
 .cards{
@@ -362,19 +362,19 @@ body{
     border-radius: 8px;
     border: none;
     font-size: 20px;
-    max-width: 350px;   
+    max-width: 550px;   
     min-height: 40px;
-    min-width: 450px;
+    min-width: 550px;
 }
 
 .shadow{
-    height: 125vh;
-    width: 100%;  
     background-color: rgba(0, 0, 0, 0.301);
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top:0;
     bottom: 100hv;
     display: none;
+    height: 125vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:0;
+    width: 100%;  
 }

@@ -91,7 +91,7 @@ function displayCart() {
         document.getElementById("confirmation-side").style.display = "none";
     }
 }
-
+// appears the popup screen with the items in the cart 
 function confirmOrder(){
     
     console.log("in")
@@ -156,17 +156,16 @@ function confirmOrder(){
         // print the popup screen
         popup.innerHTML = print;
         popup.style.display= "block";
-        
-        
-        
+        appearShadow()
    
 }
-
+    
 function newOrder(){
     document.getElementById("my-popup").style.display = "none"
     restButtons(cart)
    
     updateCartDisplay()
+    removeShadow()
 }
 
 function restButtons(cartItems){
@@ -176,4 +175,15 @@ function restButtons(cartItems){
 
 }
 
+function appearShadow(){
+    const shadowScreen = document.getElementById("shadow-popup");
+    shadowScreen.style.display = "block"
+    shadowScreen.style.height = "100hv"
+}
+
+function removeShadow(){
+    const shadowScreen = document.getElementById("shadow-popup");
+    shadowScreen.style.display = "none"
+    document.getElementById("my-popup").style.display = "none"
    
+}

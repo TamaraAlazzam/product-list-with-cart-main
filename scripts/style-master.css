@@ -16,6 +16,7 @@ body{
     margin: 0;
     padding: 0;
     
+    
 }
 
 .container{
@@ -28,7 +29,7 @@ body{
     margin:40px auto;
     max-height: 1200px;
     max-width:1800px;
-    min-height: 1200px;
+    min-height: 900px;
 }
 
 .items-side{
@@ -366,3 +367,14 @@ body{
     min-width: 450px;
 }
 
+.shadow{
+    height: 125vh;
+    width: 100%;  
+    background-color: rgba(0, 0, 0, 0.301);
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top:0;
+    bottom: 100hv;
+    display: none;
+}

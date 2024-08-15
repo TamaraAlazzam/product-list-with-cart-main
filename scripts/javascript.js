@@ -50,5 +50,6 @@ fetch("../data.json")
     });
     // printing the cards
     placeholder.innerHTML = print;
+   
 });
 

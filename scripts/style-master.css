@@ -13,9 +13,9 @@
 }
 
 body{
-    margin: 0;
-    padding: 0;
-    
+    margin: auto;
+    padding: 10px 0 0 0;
+    height: 90vh;
     
 }
 
@@ -26,22 +26,23 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: grid;
     grid-template-columns:repeat(3,1fr);    
-    margin:40px auto;
+    margin: 10px auto;
     max-width:90vw;
-    min-height: 100vh;
+    max-height: 100vh;
+    min-height: 95vh;
 }
 
 .items-side{
     grid-column: 1/span 2;
-    margin: 30px 0px 0px 30px;
+    margin: 20px 0px 0px 20px;
 
 }
 
 .item-place{
     display: flex;
     grid-template-columns: repeat(3,1fr);   
-    margin: 10px;
-    max-height: 70hv;
+    margin: 0;
+    max-height: 80vh;
     overflow-y: scroll;
     scrollbar-width: none;
     flex-wrap: wrap;
@@ -369,9 +370,8 @@ body{
 
 .shadow{
     background-color: rgba(0, 0, 0, 0.301);
-    bottom: 100hv;
     display: none;
-    height: 125vh;
+    height: 100vh;
     margin: 0;
     padding: 0;
     position: absolute;

@@ -94,7 +94,6 @@ function displayCart() {
 // appears the popup screen with the items in the cart 
 function confirmOrder(){
     
-    console.log("in")
     let popup = document.getElementById("my-popup");
     let print = ` 
      <img src="../assets/images/icon-order-confirmed.svg" style="margin:30px 0 0 30px;">

@@ -1,0 +1,71 @@
+<!DOCTYPE html5>
+<html>
+<head>
+    <link rel="stylesheet" href="style-master.css">
+    
+</head>
+<body>
+    <div id="shadow-popup" class="shadow" onclick="removeShadow()"></div>
+    <div class="popup-screen" id="my-popup" style="display: none;">
+
+            <!-- the popup screen will appear here  -->
+
+    </div>
+    
+    
+    <div class="container" >
+
+        <div class="items-side">
+
+            <h1 style="padding-left: 50px;">Desserts</h1>
+
+            <div class="item-place" id="print-card">
+
+                        <!-- print the cards here using javascript -->
+
+                
+                
+            </div>
+
+        </div>
+    
+        
+        <div class="cart-side">
+                <h3 class="cart-title" id="cart-title-number"> Your Cart (0)</h3>
+                
+
+                    <div class="empty-cart" id="empty-cart-place" >
+                        <img src="../assets/images/illustration-empty-cart.svg">
+                        <p>Your added items will appear here</p>
+                    </div>
+                
+                    <div class="items-in-the-cart" id="filled-cart" >
+
+                            <!-- printing the items in the cart here -->
+
+
+                    
+
+                    
+                </div>
+                    <div class="total-and-confirmation" id="confirmation-side" >
+                        <div class="total-order-price">
+                            <p>Order Total</p>
+                            <span class="totle-price-cost" id="total-price-display">$46.50</span>
+                        </div>
+                        <div class="carbon-row"><p> <img src="../assets/images/icon-carbon-neutral.svg"> This is a carbon-neutral delivery</p></div>
+                        <button class="confirmation-btn" type="submit" onclick="confirmOrder()"> Confirm Order</button>
+                    </div>
+                
+                <div>
+
+                </div>
+        </div>
+
+    </div>
+    <script src="javascript.js"></script>
+    <script src="javascript-behavior.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+:root {
+  /* Couleurs */
+  --orangeRed: hsl(14, 86%, 42%);
+  --light: hsl(159, 69%, 38%);
+
+  --rose50: hsl(20, 50%, 98%);
+  --rose100: hsl(13, 31%, 94%);
+  --rose300: hsl(14, 25%, 72%);
+  --rose400: hsl(7, 20%, 60%);
+  --rose500: hsl(12, 20%, 44%);
+  --rose900: hsl(14, 65%, 9%);
+
+  /* Typographie */
+  --font-body: "Red Hat Text", sans-serif;
+
+  --normal: 400;
+  --med: 600;
+  --bold: 700;
+}
+
+* {
+  font-family: var(--font-body);
+}
+
+body {
+  background-color: var(--rose50);
+  font-size: 16;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1em;
+  margin: 0;
+}
+h3 {
+  color: var(--orangeRed);
+  font-size: 0.8em;
+  margin: 5px 0;
+}
+h4 {
+  color: var(--orangeRed);
+  font-size: 1.2em;
+}
+
+.container {
+  display: flex;
+  padding: 3rem 2rem 2rem 5rem;
+}
+
+.listproduct {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+  margin-right: 1rem;
+}
+
+.main-section {
+  flex: 2;
+}
+.sidebar {
+  flex: 1;
+}
+
+.cart {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.getNewdata {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.empty-message {
+  color: var(--rose500);
+  font-size: 0.9em;
+} /*your add itmes will apper here  */
+
+.empty-content {
+  text-align: center;
+}
+
+.products-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.products-card p {
+  color: var(--rose500);
+  font-size: 0.9em;
+  font-weight: var(--med);
+  margin-top: 1.5rem;
+}
+
+.image-product {
+  border-radius: 10px;
+  border: 1px solid var(--rose50);
+  height: 35vh;
+  object-fit: cover;
+  position: relative;
+  transition: border 0.3s ease;
+  width: 100%;
+}
+
+.image-product.active {
+  border: 2px solid var(--orangeRed);
+}
+
+.addToCart {
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50px;
+  border: 2px solid var(--rose300);
+  color: var(--rose900);
+  display: flex;
+  font-weight: var(--bold);
+  gap: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.addToCart:hover {
+  border-color: var(--orangeRed);
+  color: var(--orangeRed);
+  cursor: pointer;
+}
+.addToCart,
+.counter {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -22px;
+  z-index: 1;
+}
+
+/* the number in the middle 0 */
+.addToCart.hidden {
+  display: none;
+}
+
+.counter {
+  align-items: center;
+  display: none;
+  justify-content: space-between;
+}
+/*  */
+
+.icon-remove {
+  border-radius: 50%;
+  border: 1px solid var(--rose300);
+  cursor: pointer;
+  fill: #caafa7;
+  padding: 5px;
+}
+
+.icon-remove:hover {
+  border: 1px solid var(--rose900);
+  fill: var(--rose900);
+}
+.counter {
+  align-items: center;
+  background-color: var(--orangeRed);
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  width: 100px;
+}
+
+.counter span {
+  color: hsl(0, 0%, 100%);
+}
+.hidden {
+  display: none;
+}
+
+.icon-decrement,
+.icon-increment {
+  cursor: pointer;
+
+  border-radius: 13px;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.image-border {
+  border: 3px solid var(--orangeRed);
+}
+
+/* here we try to show the content after clicking   */
+
+.cart-summary {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-div,
+.final-total {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-total {
+  font-size: 1.5em;
+  font-weight: var(--bold);
+}
+
+.carbo-neutral {
+  align-items: center;
+  background-color: var(--rose100);
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.confirm-order,
+.start-new-order {
+  background-color: var(--orangeRed);
+  border-radius: 50px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: var(--med);
+  padding: 1rem;
+  width: 100%;
+}
+
+.pdcs-infos {
+  align-items: flex-start;
+  display: flex;
+}
+
+.product-quantity {
+  color: var(--orangeRed);
+  font-weight: var(--med);
+  margin-right: 15px;
+}
+
+.single-price {
+  color: var(--rose300);
+  font-weight: var(--med);
+  margin-right: 10px;
+}
+
+.total-price {
+  color: var(--rose500);
+  font-weight: var(--med);
+}
+
+.cart-items {
+  display: none;
+}

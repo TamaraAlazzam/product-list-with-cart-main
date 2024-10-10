@@ -1,74 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product list with cart</title>
+    <link rel="stylesheet" , href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Desserts</h1>
+      <div class="container"></div>
+      <div class="cart">
+        <h3>Your Cart(<span id="all-elements-count">0</span>)</h3>
+        <div id="cart-added-items"></div>
+        <div id="empty-cart-wrapper">
+          <div id="empty-cart">
+            <img
+              id="empty-cart-img"
+              src="/assets/images/illustration-empty-cart.svg"
+            />
+            <p id="empty-cart-text">Your added items will appear here</p>
+          </div>
+        </div>
+        <div id="total-price-container">
+          <div class="span-wrapper">
+            <span id="order-total-text">Order Total</span>
+            <span id="total-price"></span>
+          </div>
+          <div id="carbon-neutral">
+            <img src="/assets/images/icon-carbon-neutral.svg" />
+            <p>This is a <strong>carbon-neutral</strong> delivery</p>
+          </div>
+          <button id="confirm-order">Confirm Order</button>
+        </div>
+      </div>
+    </div>
+    <div id="order-confirmed-modal" class="hidden"></div>
+    <div id="blocking-overlay"></div>
 
-  Desserts
-
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
-
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
-
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
-
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
-
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
-
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
-
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
-
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
-
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
-
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="/app.js"></script>
+  </body>
 </html>
